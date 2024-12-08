@@ -1,5 +1,7 @@
 {
-  description = "Thursday, October 31st. The city streets are crowded for the holiday.";
+  description = ''
+    Thursday, October 31st. The city streets are crowded for the holiday.
+  '';
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs?ref=nixos-unstable";
@@ -8,6 +10,13 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    
+    hyprland.url = "github:hyprwm/Hyprland";
+    hyprland-plugins = {
+      url = "github:hyprwm/hyprland-plugins";
+      inputs.hyprland.follows = "hyprland";
+    };
+
 
     
   };

@@ -6,10 +6,12 @@ let
 in
 {
   
+  networking.hostName = hostname;
+  
   services = {
 
     xserver = {
-      enable = true;
+      enable = false;
       xkb.layout = keyboardLayout;
       xkb.variant = "";
     };
@@ -18,6 +20,11 @@ in
   console.keyMap = keyboardLayout;
 
   environment.systemPackages = with pkgs; [
+    fd
+    bc
+    git-ignore
+    gcc
+    vim
     wget
     curl
   ];

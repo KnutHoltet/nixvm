@@ -1,9 +1,5 @@
-{ pkgs, lib, ... }: {
-  
-  imports = [
-    ./audio.nix
-  ];
+{
 
-
+  imports = [ ./gpu ];
 
 }
