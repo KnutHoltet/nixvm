@@ -24,6 +24,7 @@ in
     bc
     git-ignore
     gcc
+    xdg-utils
     vim
     wget
     curl
