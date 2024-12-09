@@ -2,5 +2,8 @@
   imports = [
     ./fetching
     ./terminals
+
+    ./browsers
+
   ];
 }

@@ -3,6 +3,7 @@
 
   imports = [
     ./bindings.nix
+
   ];
 
   wayland.windowManager.hyprland = {
@@ -12,6 +13,9 @@
 
     settings = {
       "$mod" = "SUPER";
+
+      "$shiftMod" = "SUPER_SHIFT";
+
     };
 
    
