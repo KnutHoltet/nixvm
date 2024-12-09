@@ -1,3 +1,4 @@
+
 { pkgs, config, inputs, ... }:
 
   # "$mod, Q, exec, ${pkgs.kitty}/bin/kitty" # Kitty
@@ -12,6 +13,7 @@
       
 
     ]; 
+
     
   };
 
